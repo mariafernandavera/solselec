@@ -1,0 +1,227 @@
+*{
+padding:0px;
+margin:0px;
+
+}
+img{
+	position:static;
+	display:block;
+margin:auto;
+}
+.c{
+	background-color:#1A5276;
+	margin:auto;
+	width:100%;
+	font-family:arial;
+	
+}
+.b{
+	background-color:white;
+	
+}
+.d{
+	background-color:#C9CEDB;
+}
+
+.nav{
+	list-style-type:none;
+	overflow:hidden;
+	text-align:center;
+}
+
+
+ .nav li a{
+	 	 background-color:#1A5276;
+     padding: 20px 100px;
+	 font-size:larger;
+	 color:white;
+	 text-decoration:none;
+	 display:inline-block;
+	 
+ }
+ 
+  .nav li a:hover {
+	  background-color:#ec7063;
+	
+	  
+  }
+  .m  a:hover {
+		background-color:#ec7063;
+			
+	}
+ .nav > li {
+ float:left;
+ border-left: 1px solid white;
+ }
+ 
+ .nav li  ul{
+	 display:none;
+	 position:absolute;
+	 
+ }
+ 
+ .nav li:hover > ul{
+	 display:block;
+ }
+ 
+ .m a{
+			color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #1A5276;
+	border-radius: 25px;
+			list-style-type:none;
+			
+			border-top:1px solid white;
+			
+			
+}
+.m{list-style-type:none; padding:1px 16px; margin: 0px 0px}
+
+.mySlides{
+	display:none;
+	text-align:right;
+	width:70%;
+	height:500px;
+	margin:auto;
+}
+
+ul.vision{
+	list-style-image: url("Imagenes/23.jpeg");
+}
+
+body {
+	font-family: Arial;
+	
+}
+
+div.titulo{
+	margin: auto;
+	text-align:center;
+	width: 70%;
+	color:#ec7063;
+	font-size: larger;
+	border-bottom:2px solid #ec7063;
+	border-top:2px solid #ec7063;
+	padding:10px ;
+	margin-bottom:10px;
+}
+
+div.vision{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color:white;
+	padding:40px 40px;
+	border:1px solid white;
+    border-radius:10px;	
+}
+
+input[type=text], input[type=number], input[type=gmail], input[type=password], input[type=date], input[type=email]{
+    padding: 7px 20px;
+    border: 2px solid lightblue;
+    border-radius: 25px;
+	
+    }
+
+	textarea{
+    border: 2px solid lightblue;
+    border-radius: 10px;
+	}
+select {
+    border:2px solid lightblue;
+    width: 100%;
+    padding: 7px 20px;  
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    }
+	
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ec7063;
+    border: 1px solid #ec7063;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+	font-size:large;
+    cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	margin: 0px 10px;
+    }
+	input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {text-decoration:underline; background-color:#F38F85;}
+	
+div.formu{
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: hsla(0,0%,0%, 0.7);
+	margin:auto;
+	text-align: left;
+	width:40%;
+	padding: 20px 20px;
+	margin-top: 50px;
+	color:white;
+	font-size:larger;
+	text-align:center;
+}
+
+	
+
+table.formul td{
+	
+	color:white;
+	font-size:larger;
+	padding: 5px;
+	vertical-align: top;
+	text-align:center;
+}
+
+table.formul td + td{
+	text-align:left;
+	
+	
+	
+}
+
+td[colspan]{
+	text-align:center;
+	white-space: pre-wrap
+	
+}
+body.formul{
+	background-image:url(../Imagenes/3.jpg);
+	background-repeat:no-repeat;
+	height:100%;
+	margin:0px 0px 0px 0px;
+	background-color:#1A5276;
+	  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+	div .c {width:100%; height:80%; margin:0px; position: fixed;}
+}
+
+  
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+

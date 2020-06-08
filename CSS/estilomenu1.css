@@ -1,0 +1,892 @@
+*{
+padding:0;
+margin:auto;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+font-family:arial;
+
+}
+ 
+/*EN EL VIDEO HAY UN ERROR POR EL CUAL NO SE VISUALIZA EN GOOGLE CHROME,
+EL CÓDIGO A CONTINUACIÓN YA ESTA CORREGIDO*/
+ img {
+	position:static;
+	display:block;
+margin:auto;
+}
+.logo img{
+	width: 100px;
+	height:20px;
+	left:0;
+}
+.contenedor div{display:inline-block}
+
+.icon-exit{
+	display:inline-block;
+	margin-right:7px;
+
+}
+
+.fondo2{
+background-image: url(Imagenes/13.jpg);
+	background-repeat:repeat;
+	background-size:400px 200px;
+	width:100%;
+	
+}
+
+.logo{width:18%;}
+.logo img{width:100%;
+height:60px;}
+
+
+
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+   z-index:1000;
+   
+}
+ 
+.contenedor {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	vertical-align:bottom;
+	padding:0;
+	width:100%;
+	background-color:black;
+	height:60px;
+	 z-index:1000;
+	 position:fixed;
+	 margin-left:0px;
+	 margin-right:0px;
+}
+ .contenedor{background-color: white;}
+.contenedor ul {
+	list-style:none;
+	
+	
+}
+ 
+.contenedor > ul {
+	
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:80%;
+	background-color:white;
+	
+	float:right;
+	height:60px;
+	margin:0;
+	
+}
+.icon-checkmark{
+	color:black;
+}
+ 
+.contenedor > ul> li {
+	display:inline-block;
+	position:relative;
+	width:25%;
+	z-index:900;
+	top:0;
+}
+body {
+	box-sizing:border-box;
+  font-family: Arial;
+}
+html{width:100%}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+
+
+ 
+/*Sub-menu*/
+
+.contenedor > ul> li ul{
+	display:none;
+
+	
+}
+
+.contenedor>ul>.lista:hover ul{
+	z-index:1000;
+	position:absolute;
+	width:100%;
+	display:block;
+	color: white;
+	background-color:none;
+	
+}
+.contenedor>ul>.lista>.desplegable>li>a{
+	background:hsla(0,0%,0%, 0.8);
+	border-radius:10px;
+}
+.contenedor>ul>.lista>.desplegable>li>a:hover {
+	background-color:black;
+}
+
+ .contenedor>ul>.lista>.desplegable>li{
+	border-bottom:1px solid rgba(255,255,255,.5);
+}
+.contenedor > ul li a {
+	color: black;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+
+
+ 
+.contenedor > ul > li > a span {
+	background:black;
+	color: white;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+.contenedor > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+.contenedor > ul > li > a:hover > span {
+	top:0;
+}
+ 
+/*Colores*/
+.contenedor ul li a .primero {
+	background:black;
+	color: white;
+}
+ 
+.contenedor ul li a .segundo {
+	background:black;
+	color: white;
+}
+ 
+.contenedor ul li a .tercero {
+	background:black;
+	color: white;
+}
+ 
+.contenedor ul li a .cuarto {
+	background: black;
+	color: white;
+}
+ 
+
+.responde{display:none;}
+.menubar{display:none;}
+.menubar img{display:none;}
+
+.caret{  text-align: center; margin-left:7px;}
+/*respondesive para celulares*/
+@media screen and (max-width:800px){
+	.contenedor{display:none;}
+	.responde{display:block;}
+body {
+		padding-top:76px;
+		width:100%;
+		overflow-x:hidden;
+		margin-bottom:0px;
+		padding-bottom: 0%;
+		
+	}
+	.conta{
+		top:-60px;
+	}
+	
+	
+
+	
+	.menubar img{
+		display:inline-block;
+		position:relative;
+		width:200px;
+		height:100%;
+	}
+ 
+	.menubar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:white;
+		z-index:1000;
+	}
+ 
+	.menubar .btmenu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menubar span {
+		float: right;
+		font-size: 40px;
+	}
+
+ 
+
+	header .responde {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+		top:76px;
+	}
+
+	header .responde ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+		position: relative;
+	}
+
+	header .responde ul li a {
+		display: block;
+		color:#fff;
+	text-decoration:none;
+	padding: 20px;
+	}
+
+	header .responde ul li:hover .children {
+		display: none;
+		color: white;
+	}
+
+	header .responde ul li .children {
+		width: 100%;
+		position: relative;
+		display: none;
+	background:rgb(0,0,0,0.9);
+	
+	z-index:1000;
+	}
+
+	header .responde ul li .children li a {
+		margin-left:20px;
+		display: block;
+	}
+
+	header .responde ul li .caret {
+		font-size:50%;
+		float: right;
+	}
+	header {
+	width: 100%;
+}
+
+header .responde {
+	background:rgb(0,0,0,0.7);
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+
+header .responde ul {
+	list-style:none;
+}
+
+
+	div.formu{
+		text-align:left;
+		
+	}
+
+
+.p:hover {
+	background:#ec7063;
+}
+.s:hover{
+	background:#63ecd5;
+}
+
+.t:hover{
+	background:#DAB63F;
+}
+.submenu:hover{
+	background:#FF7801;
+}
+.submenu li:hover{
+	background:#FF7801;
+}
+
+
+header .responde ul li a span {
+	margin-right:10px;
+}
+
+
+
+
+
+header .responde ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.candado{float:left;
+font-size:20px;
+left:0;
+display:inline-block;}
+
+.social{
+	width:10%;
+	height:auto;
+}
+
+ .coli {
+    width: 100%;
+    display: block;
+	clear:both;
+	margin-left:20%;
+	float:none;
+	margin-bottom:15px;
+	
+  }
+  .coli img{
+	  width:20%;
+	  height:20%;
+  }
+  .rowi{
+	  width:100%;
+  }
+  .bienvenida{
+	  margin-right:0;
+  }
+  
+}
+
+
+@media screen and (max-width:1174px){
+	.logo{
+		width:15%;
+	}
+	.imgus img{
+	width:40%;
+	height:10%;
+	margin-top:-50px;
+}
+ul.vision{
+	margin-bottom:50px;
+	
+}
+.vision li a{
+	text-decoration:none;
+}
+.imgus{
+	margin-top:-50px;
+}
+	.contenedor ul {
+		width:82%;
+	}
+	.coli{
+		  width: 100%;
+    display: block;
+	clear:both;
+	margin-left:20%;
+	float:none;
+	margin-bottom:15px;
+	}
+	 .rowi{
+	  width:100%;
+  }
+  .bienvenida{
+	  margin-right:0;
+  }
+  body {
+		
+		width:100%;
+		overflow-x:hidden;
+		
+	}
+
+}
+@media screen and (max-width:680px){
+	
+.coli .cardi img{
+	width:20px;
+	height:20px;	
+}
+
+input[type=text], input[type=number], input[type=gmail], input[type=password], input[type=date], input[type=email]{
+   width:50%;
+	
+    }
+
+	textarea{
+    width:50%
+	}
+select {
+    border:2px solid lightblue;
+    width: 90%;
+    padding: 7px 20px;  
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    }
+	
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ec7063;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-align: center;
+    }
+	.coli{
+		width:200%;
+		margin:0;
+		padding:0;
+		clear:none;
+		margin:20px;
+		font-size:2px;
+	}
+	.rowi{
+		margin:0;
+		padding:0;
+		margin-left:0;
+	}
+	.social{
+		display:none;
+	}
+	.bienvenida{
+		font-size:20px;
+	}
+}
+
+
+/*informacion*/
+
+html {
+  box-sizing: border-box;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.coli{
+  float: left;
+  width: 40%;
+  margin-bottom: 50px;
+  padding: 0 8px;
+  background-color:rgba(255, 255, 255);
+  border:1px solid lightgray;
+  color: black;
+  font-size:20px;
+  margin-right:80px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.coli h2{
+	color:black;
+	margin-bottom:5px;
+}
+.contini h2{
+	color:black;
+}
+
+.rowi{
+	margin-left:100px;
+	
+}
+.bienvenida{
+	color:rgb(0, 0, 0);
+		font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border-bottom:5px solid black;
+	margin-bottom: 20px;
+	margin-left:80px;
+	margin-right:100px;
+	font-size:30px;
+}
+
+
+
+.contini {
+  padding: 0 16px;
+}
+
+.contini::after, .rowi::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.boti {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boti:hover {
+  background-color: #555;
+}
+.coli .cardi img{
+	width:200px;
+	height:200px;
+	border-radius:100%;
+	
+}
+
+
+
+
+
+
+
+ul.vision{
+	list-style:none;
+}
+body {
+	font-family: Arial;
+	background-image:url(Imagenes/13.jpg);
+	height:100%;
+}
+
+div.titulo{
+	margin: auto;
+	text-align:center;
+	width: 50%;
+	color:#ec7063;
+	font-size: larger;
+	border-bottom:2px solid #ec7063;
+	border-top:2px solid #ec7063;
+	padding:10px;
+}
+
+div.vision{
+	margin-left: 100px;
+float:left;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	background-color:white;
+	padding:40px 40px;
+	border:1px solid white;
+    border-radius:10px;	
+	margin-right:41%;
+	overflow-y:scroll;
+}
+.imgus{
+	float:right;
+	margin-top:0px;
+	width:60%;
+	height:500px;
+	position:fixed;
+	right:0px;
+	padding:0;
+}
+
+.imgus img{
+	width:75%;
+	height:163%;
+	right:0px;
+	margin-right:0px;
+
+
+}
+
+input[type=text], input[type=number], input[type=gmail], input[type=password], input[type=date], input[type=email]{
+    padding: 7px 20px;
+    border: 2px solid lightblue;
+    border-radius: 25px;
+    }
+
+	textarea{
+    border: 2px solid lightblue;
+    border-radius: 10px;
+	}
+select {
+    border:2px solid lightblue;
+    width: 90%;
+    padding: 7px 20px;  
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    }
+	
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ec7063;;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-align: center;
+    }
+div.formu{
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: hsla(0,0%,0%, 0.7);
+	margin:auto;
+	text-align: left;
+	width:50%;
+	padding: 10px 10px;
+	margin-top: 150px;
+	vertical-align:middle;
+	margin-left:45%;
+	height:auto;
+	position:relative;
+	margin-bottom:2px;
+	
+}
+table.formul td{
+	color:white;
+	font-size:larger;
+	padding: 5px;
+	vertical-align: top;
+	text-align:right;
+}
+table.formul td + td{
+	text-align:left;
+}
+
+.doble > div{
+	float:left;
+	
+
+}
+.doble{
+	margin-bottom:50px;
+	overflow-y:scroll;
+}
+
+.imag{
+	left:0px;
+	width:40%;
+	bottom:0px;
+}
+.imag img{
+	width:40%;
+	height:100%;
+
+	position:fixed;
+	left:0px;
+	
+}
+td[colspan]{
+	text-align:center;
+	white-space: pre-wrap
+	
+}
+
+body.formul{
+	background-image:url(Imagenes/13.jpg);
+	background-repeat:no-repeat;
+	height:100%;
+	margin:0px 0px 0px 0px;
+	background-color:#1A5276;
+	  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.bloque2{
+	overflow:hidden;
+	
+}
+
+.cotizacion{
+	
+	background-color:rgba(0,0,0, 0.9);
+	text-align:center;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color:white;
+	margin-top:50px;
+	width:100%
+}
+
+.pie{
+	text-align:center;
+	color:white;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color:black;
+	bottom:0%;
+	
+	position:fixed;
+	
+}
+
+.cotizacion img{width:200px;
+height:60px}
+/* barra redes sociales */
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+left:0; /* Establecemos la barra en la izquierda */
+	top: 150px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 300; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+	
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 20px 30px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .facebook {background:#2457BD;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .twitter {background: #83CDF5;}
+	.social ul li .instagram {background: white;}
+	.social ul li .youtube {background: #F73722;}
+	.social ul li .ws {background: #6ED744;}
+
+	.social ul li a:hover {
+		background: #ec7063; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 15px 20px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+	/* Position the image container (needed to position the left and right arrows) */
+.conta {
+  position: relative;
+  z-index:0px;
+  margin-top:0;
+  top:-15px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  z-index:0px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+  
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index:0px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height:100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.numbertext{
+	height:589px;
+	width:1263px;
+	padding:0;
+}
+.m{
+	height:500px;
+	position:relative;
+}

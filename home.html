@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <title>SOLSELEC</title>
+     <meta charset="utf-8"/>
+<link rel="STYLESHEET" type="text/css" href="CSS/estilomenu1.css">	 
+<link rel="STYLESHEET" type="text/css" href="CSS/estilo.css">	 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, maximun-scale=1.0, minimum-scale=1.0">
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="JS/main.js"></script>
+	 
+</head>
+<body class="d" >
+<center><div  class="b" ><img src="Imagenes/logo3.jpg" ></img></div></center>
+<header>
+<div class="menubar">
+<a href="#" class="btmenu"><span class="icon-list2"> </span>MENU</a>
+</div><br/>
+
+<nav>
+
+<ul>
+<li><a  href="login.html" target="_blank"><span class=""><i class="icon icon-home"> </i></span>INICIO</a></li><li>
+<a href="nosotros.html"><span class=""><i class="icon icon-users"> </i></span>NOSOTROS</a></li><li class="submenu">
+<a class="menu" href="#"><span class=""><i class="icon icon-lock"> </i></span>INGRESO <span class="caret" > ▼</span></a> 
+<ul class="children" >
+<li><a href="empleado1.php" target="_blank"> EMPLEADO</a></li>
+<li><a href="cliente1.php" target="_blank">CLIENTE</a></li>
+<li><a href="proveedor1.php" target="_blank">PROVEEDOR</a></li>
+<li><a href="familiar1.php" target="_blank">FAMILIAR</a></li>
+<li><a href="calificacion1.php" target="_blank">CALIFICACION</a></li>
+<li><a href="envio1.php" target="_blank">ENVIO</a></li>
+<li><a href="postventa1.php" target="_blank">POSTVENTA</a></li>
+<li><a href="producto1.php"target="_blank">PRODUCTO</a></li>
+<li><a href="representante1.php" target="_blank">REPRESENTANTE</a></li>
+<li><a href="servicio1.php" target="_blank">SERVICIO</a></li>
+
+</ul>
+</li><li class="submenu">
+<a class="menu" href="#"><span class=""><i class="icon icon-cogs"> </i></span>MODIFICACIONES<span class="caret" > ▼</span></a>
+<ul class="children" >
+<li><a href="">ACTUALIZACION</a></li>
+<li><a href="todasconsulta.html">CONSULTAR</a></li>
+<li><a href="">ELIMINAR</a></li>
+</ul></li>
+</ul>
+</nav>
+</header>
+<center><div  class="cel"> <img src="Imagenes/logo3.jpg" ></img></div></center>
+<div class="d" >
+<br/>
+
+ <?php include('Imagenes/slide.php'); slide();?>
+<section id="header" align="center" >
+</br></br>
+</br></br>
+</br></br>
+<div class="bienvenida">
+		
+					<h1><b>SU SEGURIDAD ES PRIMORDIAL PARA NOSOTROS</b></br></br>
+					
+ofrecemos soluciones de calidad en </h1>
+					
+				</div>
+				</br></br></br></br>
+	<div class="acceso"><center>
+<p align= "left" ><h2>Acceso Electronicos	</h2></br>
+<img src="Imagenes/acceso.jpg" width="250" height="250" style="float: none;" class="img1" />
+</br><font size=5 color="#ec7063">
+Proteja y Controle desde el ingreso</font>
+</br></br><font size=4 >
+Lectores Biométricos (Huellas, rostros), proximidad, claves, lecturas de placas, reconocimiento de rostros y cerraduras biométricas.</font>
+</br></br><button width="100" height="5" onclick="location.href='https://www.facebook.com'" style="color:white; background-color:grey	">CONTACTANOS</button></p></br>
+<center></div>
+<div class="sistema"><center>
+<p align= "center" ><h2>Sistemas de Alarmas electrónicos</h2></br>
+<img src="Imagenes/alarma.jpg" width="250" height="250" style="float: none;" class="img2"/>
+</br><font size=5 color="#ec7063">
+Prevenga, Detecte y Actúe</font>
+</br></br><font size=4 >
+Cableados, Inalámbricos, Híbridos, Online para monitoreo o auto monitoreo. Sistemas Antirrobo con sensores y sistemas de notificaciones.</font>
+</br></br><button width="100" height="5" onclick="location.href='https://www.facebook.com'" style="color:white; background-color:grey	">CONTACTANOS</button></br></br></p>
+</center></div>
+<div class="incendio"><center>
+<p align= "center" ><h2>Sistemas de Detección de Incendios</h2></br>
+<img src="Imagenes/incendio.jpg" width="300" height="250" class="img3"/>
+</br><font size=5 color="#ec7063">
+Mitigue el riesgo</font>
+</br></br><font size=4 >
+Sistemas con Sensores y detectores de temperatura, monóxido de carbono, humo, luces de emergencia, 
+equipos, sirenas de alerta, estaciones manuales de incendio para edificios y empresas.</font>
+</br></br></br><button width="100" height="5" onclick="" style="color:white; background-color:grey	">CONTACTANOS</button>
+</p></br></br></br></br>
+</center></div>
+<div class="alarmas"><center>
+<p align= "center" ><h2>
+
+Monitoreo De Alarmas para Tu Hogar </h2></br>
+<img src="Imagenes/camara.jpg" width="300" height="250" style="border-radius=150px" class="img4"/>
+</br><font size=5 color="#ec7063">
+Proteja y Cuide su seguridad</font>
+</br></br><font size=4 >
+Cuidamos tu hogar y brindamos tranquilidad a tu familia por medio de sistemas electrónicos de seguridad y de nuestro servicio de monitoreo de alarmas.
+Con nosotros, tu hogar siempre estará protegido.</font></br></br><button width="100" height="5" onclick="location.href='https://www.facebook.com'" style="color:white; background-color:grey	">CONTACTANOS</button></p></br></br></br></br></br>
+</center></div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+
+</script>
+</div>
+</body>
+</html>

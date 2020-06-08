@@ -1,0 +1,62 @@
+<html lang="es">
+
+<HEAD>
+    <title>LOGIN</title>
+     <meta charset="utf-8"/>
+<link rel="STYLESHEET" type="text/css" href="estilomenu.css">
+<script language="javascript" type="text/javascript">  
+	
+//busca caracteres que no sean espacio en blanco en una cadena  
+function vacio(q) {  
+        for ( i = 0; i < q.length; i++ ) {  
+                if ( q.charAt(i) != " " ) {  
+                        return true  
+                }  
+        }  
+        return false  
+}  
+  
+//valida que el campo no este vacio y no tenga solo espacios en blanco  
+function valida(F) {  
+          
+        if( vacio(F.codigo.value) == false ) {  
+                alert("El campo esta vacio debe llenarlo.")  
+                return false  
+        } else {  
+                
+				form.submit()				
+        }  
+          
+}  
+ </script>  
+</HEAD>
+<body class ="formul">
+<div class="formu">
+
+	<div class="titulo">LOGIN</div> 
+
+	<form method="POST" action="valida_usuario.php" onSubmit="return valida(this);">
+	<center><table class="formul">
+	<tr>
+		<td>
+			
+	
+			
+				 Usuario: <input type="text" name="usuario" /> 
+				
+		</td>
+	</tr><tr><td>
+	 Clave: <input type="text" name="clave" /></td></tr>
+	
+	<tr>
+		<td>
+	<input type="SUBMIT" value="Entrar">
+		</td>
+	</tr>
+	</table></center>
+	</form>
+
+
+</div>
+</body>
+</html>
